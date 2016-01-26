@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Doska</title>
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- Flex Carousel CSS settings -->
+	<link rel="stylesheet" type="text/css" href="css/flex-carousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/flex-carousel-animate.css" />	
+	<link rel="stylesheet" type="text/css" href="css/flex-carousel-skins.css" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<!-- Media -->
+	<link rel="stylesheet" href="css/media.css" type="text/css" media="screen" />
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	
+	<!-- Flex Carousel JS -->
+	<script type="text/javascript" src="js/jquery.flashblue-plugins.js"></script>
+	<script type="text/javascript" src="js/jquery.flex-carousel.js"></script>
+	<script>
+	// $(function() {
+	// 	$("#content-slider .portfolio-carousel").flexCarousel({
+	// 		breakPoints:[[1200, 4], [992, 3], [768, 2], [480, 1]],
+	// 		pagination:true,
+	// 		 showItems: 8,
+	// 		 minItems: 2,
+	// 		navigationText:['<i class="icon-left-open"></i>', '<i class=" icon-right-open"></i>'],
+	// 		navigation:false
+	// 	});
+		
+	// });
+	$(function() {
+		$("#catalog-slider .portfolio-carousel").flexCarousel({
+			breakPoints:[[1200, 6], [992, 4], [768, 4], [480, 2],[360, 1]],
+			pagination:false,
+			 showItems: 6,
+			 minItems: 2,
+			 // itemMargin: 15,
+			navigationText:['<i class="icon-left-open"></i>', '<i class=" icon-right-open"></i>'],
+			navigation:true
+		});
+		$("#catalog-slider-two .portfolio-carousel").flexCarousel({
+			breakPoints:[[1200, 6], [992, 4], [768, 4], [480, 2],[360, 1]],
+			pagination:false,
+			 showItems: 6,
+			 minItems: 2,
+			navigationText:['<i class="icon-left-open"></i>', '<i class=" icon-right-open"></i>'],
+			navigation:true
+		});
+	});
+	</script>
+</head>
+<body>
+<!-- =============  Header    ============== -->
+	<header>
+		<div id="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-md-2">
+						<div class="lang">
+							<span class="lang-active">Рус</span>
+							<span >Укр</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-offset-6 col-md-2">
+						<div id="social-icons">
+							<ul class="clearfix pull-right">
+								<li>
+									<i class="fa fa-facebook"></i>
+								</li>
+								<li>
+									<i class="fa fa-vimeo"></i>
+								</li>
+								<li>
+									<i class="fa fa-pinterest-p"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hidden-xs hidden-sm col-sm-2 col-md-2">
+						<a href="tel:+380504565434" class="phone">+38 050 456 54 34</a>
+					</div>
+				</div>
+				<div class="line"></div>
+			</div>
+		</div>
+<!-- =============  Search   ============== -->
+		<div id="header-middle">
+			<div class="container">	
+				<div class="row">
+					<div class="col-sm-4 col-md-3">
+						<div class="logo">
+							<img src="img/logo.png" height="42" width="210" alt="" class="logotype">
+						</div>
+					</div>
+					<div class=" col-sm-8 col-md-9">
+						<h4 class="title-main">достка объявлений б/у музыкальных инструментов</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="search">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<form action="" class="navbar-form" role="search">
+							<div class="input-group">
+					          <input type="text" class="form-control" placeholder="32 120 объявлений на сайте">
+					          <span class="input-group-btn">
+					          	<button type="submit" class="btn btn-default button-search" type="button"><span class="fa fa-search"></span></button>
+					          </span>
+			        		</div>
+			        	</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- =============  Search  end ============== -->
+<!-- =============  Navigation    ============== -->
+		<div id="header-bottom">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-12">
+
+						<nav class="navbar navbar-inverse" role="navigation">
+							<div class="container-fluid">
+
+							<!-- Brand and toggle get grouped for better mobile display -->
+						        <div class="navbar-header">
+						          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						          </button>
+						        </div>
+						        <!-- Collect the nav links, forms, and other content for toggling -->
+    							<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-9">
+				  					<ul class="nav nav-pills nav-justified">
+							            <!-- <li><a href="#" class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">форум</a>
+
+
+							            </li> -->
+							            <li><a href="#">Новости</a></li>
+							            <li><a href="#">Продавцам</a></li>
+							            <li><a href="#">Покупателям</a></li>
+							            <li><a href="#">Специальные предложения</a></li>
+							            <li><a href="#"> Форум</a></li>
+							            <li  class="announcement">
+							            	<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+							            		<span class="glyphicon-plus"></span>Подать обьявление
+						            		</a>
+						            		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModal" aria-hidden="true">
+											  <div class="modal-dialog modal-lg">
+											    <div class="modal-content">
+											      <form role="form">
+
+												  <div class="form-group">
+												    <label for="exampleInputEmail1">Email</label>
+												    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+												  </div>
+
+												  <div class="form-group">
+												    <label for="exampleInputPassword1">Пароль</label>
+												    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+												  </div>
+
+												  <div class="form-group">
+												    <label for="exampleInputFile">Выбрать файл</label>
+												    <input type="file" id="exampleInputFile" multiple accept="image/*,image/jpeg">
+												  </div>
+
+												  <div class="checkbox">
+												    <label>
+												          <input type="checkbox"> Проверить меня
+												        </label>
+												  </div>
+												  <button type="submit" class="btn btn-default">Отправить</button>
+												</form>
+											    </div>
+											  </div>
+											</div>
+						            	</li>
+						          	</ul>
+					          	</div>
+					        </div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =============  Navigation  end  ============== -->
+	</header>
+	<!-- =============  Header end    ============== -->
+
+<!-- =============  Image content    ============== -->
+	<div id="content">
+		<div class="container bs-example">	
+			<div class="row text-justify">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/img6.png"  alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Световое оборудование</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/img2.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Звуковое оборудование</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/laser_show.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Музыкальное оборудование</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/img4.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Мультимедийное оборудование</h5>
+				         	 </div>
+						</div>
+
+					
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/specefekti.png"  alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Специальные эффекты (дым, снег, СО2)</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/dj.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>DJ оборудование</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/img7.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Электрообордование</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/music.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Музыкальные инструменты</h5>
+				         	 </div>
+						</div>
+
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/comytasia.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Коммутационное оборудование</h5>
+				         	 </div>
+						</div>
+						
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/scena.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Сцены (Сцены, Подиумы,Фермы)</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/case.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Рэки,кейсы,чехлы</h5>
+				         	 </div>
+						</div>
+
+						<div class="col-xs-4 col-sm-3 col-md-2">
+							<div class="wrap-img">
+								<span>
+									<img src="img/zvuk.png" alt="..." class="img-thumbnail">
+								</span>
+								
+							</div>
+							<div class="caption text-center">
+					            <h5>Звуковое оборудование</h5>
+				         	 </div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- =============  Image content end   ============== -->
+	<div id="line">
+		<div class="container">
+			<hr></hr>
+		</div>
+	</div>
+	<!-- =============  Video content   ============== -->
+	<div id="content-video" class="fixed-video ">
+		<a href="javascript:void(0)" class="fixed-video-button"><i class="fa fa-caret-square-o-right"></i></a>
+		<div class="">
+			<div class="row">
+				<div class="">
+					<div class="row">
+						<div class=" col-xs-12 col-md-8">
+							<h4>Как пользоваться сайтом:</h4>
+							<div class="video">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/CesSdyftWSg" frameborder="0" allowfullscreen></iframe>
+							</div>
+							
+							<!-- <h4>Усиление музыкальных инструментов</h4> -->
+						</div>
+						<script>
+						$(document).ready(function() {
+							$('.fixed-video-button').on('click', function() {
+								$('#content-video').toggleClass('active');
+							});
+						});
+						
+						</script>
+						
+						<!-- <div class="col-ms-6 col-md-6">
+							<div class="video">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/rzhPOl0x4zA" frameborder="0" allowfullscreen></iframe>
+							</div>
+							
+							<h4>Музыкальные инструменты</h4>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============  Video content end  ============== -->
+<!-- =============  Main slider    ============== -->
+	<!-- <div id="main-slider" role="main">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-12">
+					<section class="slider">
+				        <div class="flexslider">
+				          <ul class="slides">
+				            
+				            <li>
+				            <div class="wrap-slide">
+				               <img src="img/slide.png"/>
+				            </div>
+				            <div class="wrap-slide-two">
+				             <div class="wrap-caption">
+				              	 <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+					              <h2>САКСOФОН</h2>
+					              <h2>4 800 ₴</h2>
+				              </div>
+				            </div>
+				  	    	 </li>
+				    	    
+				    	    <li>
+				            <div class="wrap-slide">
+				               <img src="img/slide.png"/>
+				            </div>
+				            <div class="wrap-slide-two">
+				              <div class="wrap-caption">
+				              	 <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+					              <h2>САКСOФОН</h2>
+					              <h2>4 800 ₴</h2>
+				              </div>
+				            </div>
+				           
+				           </li>
+				           <li>
+				            <div class="wrap-slide">
+				               <img src="img/slide.png"/>
+				            </div>
+				            <div class="wrap-slide-two">
+				             <div class="wrap-caption">
+				              	 <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+					              <h2>САКСOФОН</h2>
+					              <h2>4 800 ₴</h2>
+				              </div>
+				            </div>
+				           </li>
+				          
+				          </ul>
+				        </div>
+				      </section>
+				</div>
+			</div>
+		</div>
+		
+    </div> -->
+    <!-- =============  Slider carousel   ============== -->
+	<div id="catalog-slider" class="main">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row table-left">
+					<h2>Топовые товары</h2>
+						<div class="portfolio-carousel">
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide1.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide2.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide3.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<a href="http://vimeo.com/90536368" class="video-link"><i class="icon-play"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide4.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide5.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide6.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide7.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============  Slider carousel end  ============== -->
+	<div id="catalog-slider-two" class="main-page main">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row table-left">
+					<h2>Новинки</h2>
+						<div class="portfolio-carousel">
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide1.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide2.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide3.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<a href="http://vimeo.com/90536368" class="video-link"><i class="icon-play"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide4.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide5.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide6.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide7.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- =============  Main slider  end  ============== -->
+    <div id="line">
+		<div class="container">
+			<hr></hr>
+		</div>
+	</div>
+	<!-- =============  Video content   ============== -->
+	<div id="content-video">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-ms-offset-2 col-md-offset-2 col-ms-8 col-md-8">
+							<h4>Обучающее видео: как пользоваться сайтом</h4>
+							<div class="video">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/CesSdyftWSg" frameborder="0" allowfullscreen></iframe>
+							</div>
+							
+						</div>
+						<!-- <div class="col-ms-6 col-md-6">
+							<div class="video">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/CesSdyftWSg" frameborder="0" allowfullscreen></iframe>
+							</div> 
+							<h4>Обучающее видео: как пользоваться сайтом</h4>
+						</div> -->
+						<!-- <iframe width="1097" height="617" src="https://www.youtube.com/embed/gGYV7Gb7LTo" frameborder="0" allowfullscreen></iframe> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============  Video content end  ============== -->
+
+	
+	<!-- =============  Footer    ============== -->
+	<footer>
+		<div id="footer">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-xs-12 col-sm-9 col-md-9">
+								<div class="row">
+									<div class="col-xs-4 col-sm-4 col-md-4">
+										<h5>Сoтруднечество</h5>
+										<ul>
+											<li><a href="">Партнерская программа</a></li>
+											<li><a href="">Организаторам концертов</a></li>
+											<li><a href="">Репетиционным базам</a></li>
+											<li><a href="">Музыкальным коллективам</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4">
+										<h5>Покупателю</h5>
+										<ul>
+											<li><a href="">Закон о правах потребителя</a></li>
+											<li><a href="">Накопительная программа</a></li>
+											<li><a href="">Узнать состояние заказа</a></li>
+											<li><a href="">Оставить отзыв о работе</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4">
+										<h5>Предложения</h5>
+										<ul>
+											<li><a href="">Хиты продаж</a></li>
+											<li><a href="">Новые товары</a></li>
+											<li><a href="">Распродажа</a></li>
+											<li><a href="">Шоурум</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="phone text-right">
+									<a href="tel:+3805045634">+38 050 456 34</a><br>
+									<a href="tel:+3805045634">+38 050 456 34</a>
+								</div>
+								<div class="week-time text-right">
+									<span>Пн-Сб </span>|
+									<span>с 10:00 до 20:00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-6">
+							<span>&copy; 2015 SoundDesk</span>
+					</div>
+					<div class="col-md-6 text-right">
+							<i class="fa fa-wordpress"></i>
+							<i class="fa fa-cc-mastercard"></i>
+							<i class="fa fa-cc-visa"></i>
+							<i class="fa fa-cc-paypal"></i>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	<!-- =============  Footer  end  ============== -->
+	<!-- =============  Modal window right   ============== -->
+	<div id="modal-right">
+		<div id="fixed-right-block">
+			
+			<a href="#" data-toggle="modal" data-target=".bs-example-mm">Задать вопрос консультанту</a>
+			<i class="fa fa-commenting-o"></i>
+		
+		</div>
+
+		<div class="modal fade bs-example-mm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		      	<div class="row">
+				<div class="wrap-container-ask">
+					<div class="container-ask">
+						<form role="form">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email</label>
+						    <input type="email" class="form-control" id="exampleInputEmail " placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Задать вопрос</label>
+						    <textarea class="form-control" rows="3" placeholder="Написать сообщение..."></textarea>
+						  </div>
+						  <button type="submit" class="btn btn-default">Отправить</button>
+						</form>
+					</div>		
+				</div>
+			</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!-- =============  Modal window right end  ============== -->
+	<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   SyntaxHighlighter.all()
+    // });
+    // $(window).load(function(){
+    //   $('#main-slider .flexslider').flexslider({
+    //     animation: "slide",
+    //     slideshow: false,
+    //     maxItems: 1,
+    //     start: function(slider){
+    //       $('body').removeClass('loading');
+    //     }
+    //   });
+    // });
+    
+  </script>
+</body>
+</html>

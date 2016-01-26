@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Catalog</title>
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- Flex Carousel CSS settings -->
+	<link rel="stylesheet" type="text/css" href="css/flex-carousel.css" />
+	<link rel="stylesheet" type="text/css" href="css/flex-carousel-animate.css" />	
+	<link rel="stylesheet" type="text/css" href="css/flex-carousel-skins.css" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<!-- Media -->
+	<link rel="stylesheet" href="css/media.css" type="text/css" media="screen" />
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	
+	<!-- Flex Carousel JS -->
+	<script type="text/javascript" src="js/jquery.flashblue-plugins.js"></script>
+	<script type="text/javascript" src="js/jquery.flex-carousel.js"></script>
+	<script>
+	$(function() {
+		$("#catalog-slider .portfolio-carousel").flexCarousel({
+			breakPoints:[[1200, 4], [992, 3], [768, 2], [480, 1]],
+			pagination:false,
+			 showItems: 4,
+			 minItems: 2,
+			navigationText:['<i class="icon-left-open"></i>', '<i class=" icon-right-open"></i>'],
+			navigation:true
+		});
+		$("#catalog-slider-two .portfolio-carousel").flexCarousel({
+			breakPoints:[[1200, 4], [992, 3], [768, 2], [480, 1]],
+			pagination:false,
+			 showItems: 4,
+			 minItems: 2,
+			navigationText:['<i class="icon-left-open"></i>', '<i class=" icon-right-open"></i>'],
+			navigation:true
+		});
+	});
+	</script>
+</head>
+<body>
+<!-- =============  Header    ============== -->
+	<header>
+		<div id="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-md-2">
+						<div class="lang">
+							<span class="lang-active">Рус</span>
+							<span >Укр</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-offset-8 col-md-2">
+						<div id="social-icons">
+							<ul class="clearfix pull-right">
+								<li>
+									<i class="fa fa-facebook"></i>
+								</li>
+								<li>
+									<i class="fa fa-vimeo"></i>
+								</li>
+								<li>
+									<i class="fa fa-pinterest-p"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+			</div>
+		</div>
+<!-- =============  Search   ============== -->
+		<div id="header-middle">
+			<div class="container">	
+				<div class="row">
+					<div class="col-sm-4 col-md-3">
+						<div class="logo">
+							<img src="img/logo.png" height="42" width="210" alt="" class="logotype">
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-7">
+						<form action="" class="navbar-form" role="search">
+							<div class="input-group">
+					          <input type="text" class="form-control" placeholder="32 120 объявлений на сайте">
+					          <span class="input-group-btn">
+					          	<button type="submit" class="btn btn-default button-search" type="button"><span class="fa fa-search"></span></button>
+					          </span>
+			        		</div>
+			        	</form>
+					</div>
+					<div class="hidden-xs hidden-sm col-sm-2 col-md-2">
+						<a href="tel:#" class="phone">+38 050 456 54 34</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =============  Search  end ============== -->
+		<!-- =============  Navigation    ============== -->
+		<div id="header-bottom">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-12">
+
+						<nav class="navbar navbar-inverse" role="navigation">
+							<div class="container-fluid">
+
+							<!-- Brand and toggle get grouped for better mobile display -->
+						        <div class="navbar-header">
+						          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						          </button>
+						        </div>
+						        <!-- Collect the nav links, forms, and other content for toggling -->
+    							<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-9">
+				  					<ul class="nav nav-pills nav-justified">
+							            <li><a href="#" class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">форум</a>
+
+
+							            </li>
+							            <li><a href="#">Новости</a></li>
+							            <li><a href="#">Обмен</a></li>
+							            <li><a href="#">Продавцам</a></li>
+							            <li><a href="#">Специальные предложения</a></li>
+							            <li  class="announcement">
+							            	<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+							            		<span class="glyphicon-plus"></span>Подать обьявление
+						            		</a>
+						            		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModal" aria-hidden="true">
+											  <div class="modal-dialog modal-lg">
+											    <div class="modal-content">
+											      <form role="form">
+
+												  <div class="form-group">
+												    <label for="exampleInputEmail1">Email</label>
+												    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+												  </div>
+
+												  <div class="form-group">
+												    <label for="exampleInputPassword1">Пароль</label>
+												    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+												  </div>
+
+												  <div class="form-group">
+												    <label for="exampleInputFile">File input</label>
+												    <input type="file" id="exampleInputFile" multiple accept="image/*,image/jpeg">
+												    <p class="help-block">Example block-level help text here.</p>
+												  </div>
+
+												  <div class="checkbox">
+												    <label>
+												          <input type="checkbox"> Проверить меня
+												        </label>
+												  </div>
+												  <button type="submit" class="btn btn-default">Отправить</button>
+												</form>
+											    </div>
+											  </div>
+											</div>
+						            	</li>
+						          	</ul>
+					          	</div>
+					        </div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =============  Navigation  end  ============== -->
+	</header>
+	<!-- =============  Header end    ============== -->
+
+	<!-- ====================    bread    ================= -->
+	<div id="bread">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+					  <li><a href="#" class="main-bread"><i class="fa fa-list-ul"></i>Главная</a></li>
+					  <li><a href="#">Библиотека</a></li>
+					  <li ><a href="#">Данные</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>					
+	</div>		
+	
+	<!-- ====================    bread end   ================= -->
+
+	<div id="catalog">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-6 full-left">
+							<span>
+								 Добавлено:<data datatime="">11:22, 20 октября 2015,</data>	  Номер обьявления:173570041
+							</span>
+						</div>
+						<div class="col-md-6 text-right">
+							<span class="">Просмотров: 256</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row container-top-catalog">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="slider-catalog-top">
+								<!-- Place somewhere in the <body> of your page -->
+								<div id="slider" class="flexslider">
+								  <ul class="slides">
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								     <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <!-- items mirrored twice, total of 12 -->
+								  </ul>
+								</div>
+								<div id="carousel" class="flexslider">
+								  <ul class="slides">
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								     <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <li>
+								      <img src="img/slide-top-catalog.jpg" />
+								    </li>
+								    <!-- items mirrored twice, total of 12 -->
+								  </ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="reating wrap-caption">
+								<ul class="clearfix">
+									<li><h2>Bb-Кларнет A Ripamon</h2></li>
+									<li><h2 class="many">8 000 ₴</h2></li>
+									<li>
+										<div class="tel-catalog ">
+											<i class="fa fa-user"></i>
+											<i class="fa fa-phone"></i>
+											<a href="">+38 066 555 66 69</a>
+										</div>
+										<div class="name-rating">
+											<span>
+												Василий Пяточка
+											</span><br>
+											<span>
+												<i class="fa fa-star star1"></i>
+												<i class="fa fa-star star2"></i>
+												<i class="fa fa-star star3"></i>
+												<i class="fa fa-star star4"></i>
+												<i class="fa fa-star star5"></i>
+											</span>
+										</div>
+									</li>
+								</ul>
+								<p>Язычковый деревянный духовой музыкальный инструмент с одинарной тростью. Был изобретён около 1700 года в Нюрнберг, в музыке активно используется со второй половины XVIII века.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 table-left">
+					<div class="row">
+						<div class="col-md-6 table-left">
+							<div class="characteristics">
+								<h2>Характеристики товара</h2>
+								<ul>
+									<li><span>Место проис.хождения</span><span class="color-black">Hebei China (Mainland)</span></li>
+									<li><span>Тон</span><span class="color-black"></span>17</li>
+									<li><span>Производитель</span><span class="color-black">Bb</span></li>
+									<li><span>Материал корпуса</span><span class="color-black">bater</span></li>
+									<li><span>Материал поверхности</span><span class="color-black">Трудная резина</span></li>
+									<li><span>Количество клавиш</span><span class="color-black">Никелевое покрытие</span></li>
+									<li><span>Размер модели</span><span class="color-black">HCL-101</span></li>
+									<li><span>Материал ключа</span><span class="color-black">Другой</span></li>
+								</ul>
+							</div>
+							<div class="packing">
+								<h2>Упаковка</h2>
+								<ul>
+									<li><span>Единица измерения</span><span class="color-black">lot (5 pieces/lot)</span></li>
+									<li><span>Вес посылки</span><span class="color-black">10.000kg (22.05lb.)</span></li>
+									<li><span>Размер посылки</span><span class="color-black">66cm x 41cm x 29cm<br>(25.98in x 16.14in x 11.42in) </span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h2>Оставить комментарий</h2>
+							<div class="form-catalog">
+								
+								<form role="form">
+								  <div class="form-group">
+								    <input type="email" class="form-control" id="exampleInputEmail " placeholder="E-email">
+								  </div>
+								  <div class="form-group">
+								    <input type="text" class="form-control" id="exampleInputEmail " placeholder="Имя">
+								  </div>
+								  <div class="form-group">
+								  	 <span>
+										<i class="fa fa-star star1"></i>
+										<i class="fa fa-star star2"></i>
+										<i class="fa fa-star star3"></i>
+										<i class="fa fa-star star4"></i>
+										<i class="fa fa-star star5"></i>
+									</span>
+								  </div>
+								 
+								  <div class="form-group">
+								    <textarea class="form-control" rows="3" placeholder="Текст сообщения"></textarea>
+								  </div>
+								  <div class="form-group">
+								    <input type="checkbox" class="checkbox" id="exampleInputBox " checked="checked"><label for="exampleInputBox">Уведомлять об ответах</label>
+								    <button type="submit" class="btn btn-default">Оставить комментарий</button>
+								  </div>
+								  
+								</form>
+
+							</div>
+							<p class=" ">Чтобы Ваш отзыв либо комментарий прошел модерацию и был опубликован, ознакомьтесь, пожалуйста, с <a href="">нашими правилами</a>.</p>
+							<div class="comment">
+								<h2>Комментарии</h2>
+								<ul>
+									<li>
+										<div class="">
+											<span class="name">
+												Василий Пяточка
+											</span><br>
+											<span class="star">
+												<i class="fa fa-star star1"></i>
+												<i class="fa fa-star star2"></i>
+												<i class="fa fa-star star3"></i>
+												<i class="fa fa-star star4"></i>
+												<i class="fa fa-star star5"></i>
+											</span>
+											<p>К концу XVIII века кларнет становится полноправным инструментом классической музыки. Появляются виртуозные исполнители, улучшающие не только технику исполнения на кларнете, но и его конструкцию. Среди них следует отметить Ивана Мюллера, который изменил конструкцию мундштука, чем значительно повлиял на тембр, упростил передувание и расширил диапазон инструмента, по сути, создав его новую модель. С этого времени начинается «золотой век» кларнета.</p>
+										</div>
+									</li>
+									<li>
+										<div class="">
+											<span class="name">
+												Василий Пяточка
+											</span><br>
+											<span class="star">
+												<i class="fa fa-star star1"></i>
+												<i class="fa fa-star star2"></i>
+												<i class="fa fa-star star3"></i>
+												<i class="fa fa-star star4"></i>
+												<i class="fa fa-star star5"></i>
+											</span>
+											<p>К концу XVIII века кларнет становится полноправным инструментом классической музыки. Появляются виртуозные исполнители, улучшающие не только технику исполнения на кларнете, но и его конструкцию.</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+
+	<!-- =============  Slider carousel   ============== -->
+	<div id="catalog-slider">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row table-left">
+					<h2>Другие товары этого продавца</h2>
+						<div class="portfolio-carousel">
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide1.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide2.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide3.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<a href="http://vimeo.com/90536368" class="video-link"><i class="icon-play"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide4.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide5.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide6.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide7.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============  Slider carousel end  ============== -->
+	<div id="catalog-slider-two">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row table-left">
+					<h2>Похожие товары</h2>
+						<div class="portfolio-carousel">
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide1.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide2.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide3.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<a href="http://vimeo.com/90536368" class="video-link"><i class="icon-play"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide4.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide5.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide6.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="media-holder">
+									<img src="img/slide7.jpg" alt="" />
+									<div class="hover-content">
+										<div class="link-container">
+											<!-- <a href="img/slide1.jpg" class="img-link"><i class="icon-search"></i></a> -->
+										</div>
+									</div>
+								</div>
+								<div class="detail-container">
+									<h2>Saxaphone</h2>
+									<h2 class="many">8 000 ₴</h2>
+									
+								</div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============  Footer    ============== -->
+	<footer>
+		<div id="footer">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-xs-12 col-sm-9 col-md-9">
+								<div class="row">
+									<div class="col-xs-4 col-sm-4 col-md-4">
+										<h5>Сoтруднечество</h5>
+										<ul>
+											<li><a href="">Партнерская программа</a></li>
+											<li><a href="">Организаторам концертов</a></li>
+											<li><a href="">Репетиционным базам</a></li>
+											<li><a href="">Музыкальным коллективам</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4">
+										<h5>Покупателю</h5>
+										<ul>
+											<li><a href="">Закон о правах потребителя</a></li>
+											<li><a href="">Накопительная программа</a></li>
+											<li><a href="">Узнать состояние заказа</a></li>
+											<li><a href="">Оставить отзыв о работе</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4">
+										<h5>Предложения</h5>
+										<ul>
+											<li><a href="">Хиты продаж</a></li>
+											<li><a href="">Новые товары</a></li>
+											<li><a href="">Распродажа</a></li>
+											<li><a href="">Шоурум</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="phone text-right">
+									<a href="tel:+3805045634">+38 050 456 34</a><br>
+									<a href="tel:+3805045634">+38 050 456 34</a>
+								</div>
+								<div class="week-time text-right">
+									<span>Пн-Сб </span>|
+									<span>с 10:00 до 20:00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-12">
+							<span>&copy; 2015 SoundDesk</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	<!-- =============  Footer  end  ============== -->
+	<!-- =============  Modal window right   ============== -->
+	<div>
+		<div id="fixed-right-block">
+			
+			<a href="#" data-toggle="modal" data-target=".bs-example-mm2">Задать вопрос консультанту</a>
+			<i class="fa fa-commenting-o"></i>
+		
+		</div>
+
+		<div class="modal fade bs-example-mm2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div >
+		    <div class="">
+		      	<div class="row">
+				<div class="wrap-container-ask">
+					<div class="container-ask">
+						<form role="form">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email</label>
+						    <input type="email" class="form-control" id="exampleInputEmail " placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Задать вопрос</label>
+						    <textarea class="form-control" rows="3" placeholder="Написать сообщение..."></textarea>
+						  </div>
+						  <button type="submit" class="btn btn-default">Отправить</button>
+						</form>
+					</div>		
+				</div>
+			</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!-- =============  Modal window right end  ============== -->
+	<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+	  // The slider being synced must be initialized first
+	  $('#carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 55,
+	    // itemMargin: 5,
+	    minItems: 6,
+	    maxItems: 6,
+	    asNavFor: '#slider'
+	  });
+	   
+	  $('#slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    // itemMargin: 5,
+	    // itemWidth: 270,
+	    sync: "#carousel"
+	  });
+	});
+    
+  </script>
+</body>
+</html>
