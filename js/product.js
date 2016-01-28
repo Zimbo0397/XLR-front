@@ -8,17 +8,17 @@ $(document).ready(function () {
     });
 
     $('.new-product-list').bxSlider({
-        slideWidth: 200,
+        slideWidth: 150,
         minSlides: 2,
-        maxSlides: 4,
+        maxSlides: 5,
         slideMargin: 10,
         pager: false
     });
 
     $('.last-overview-list').bxSlider({
-        slideWidth: 220,
-        minSlides: 2,
-        maxSlides: 4,
+        slideWidth: 150,
+        minSlides: 1,
+        maxSlides: 5,
         slideMargin: 10,
         pager: false
     });
