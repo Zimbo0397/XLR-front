@@ -7,17 +7,20 @@
     <title>add-product</title>
     <!-- Latest compiled and minified CSS -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css"/>
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="css/css-upload/jquery.fileupload.css">
     <link rel="stylesheet" href="css/css-upload/jquery.fileupload-ui.css">
     <link rel="stylesheet" href="css/vendor/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="css/vendor/jquery.multilevelpushmenu.min.css"/>
+    <link rel="stylesheet" href="css/vendor/basichtml.css"/>
     <link rel="stylesheet" href="css/jquery-ui.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/media.css"/>
 </head>
 <body>
+    <div id="modalBack"></div>
     <header>
         <div class="container">
             <div class="row">
@@ -119,19 +122,6 @@
         </div>
     </header>
     
-    <section class="main-bredcrumbs">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <div class=" wrap-breadcrumb">
-                        <ul class="breadcrumb">
-                            <li class="active"><a href="#"><i class="fa fa-list-ul ico"></i>Главная</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section class="add-product">
@@ -165,19 +155,11 @@
                                         <span class="important">*</span>
                                     </label>
                                 </div>
-                                <fieldset>
-                                    <select name="speed" id="speed" title="Your home or work address.">
-                                        <option>Световое оборудование</option>
-                                        <option>Звуковое оборудование</option>
-                                        <option>Мультимедийное оборудование</option>
-                                        <option>Специальные эффекты</option>
-                                        <option>Электрообордование</option>
-                                        <option>Коммутационное оборудование</option>
-                                        <option>Сцены </option>
-                                        <option>DJ оборудование</option>
-                                        <option>Кейсы</option>
-                                    </select>
-                                </fieldset>
+                                <a href="#" data-toggle="modal" id="categoryModalBtn">
+                                    <div class="fixbord">
+                                        
+                                    </div>
+                                </a>
                             </div>
                             <hr>
                             <div class="form-group">
@@ -193,6 +175,55 @@
                                         максимально 2000 знаков
                                     </span>
                                 </div>
+                            </div>
+                            <div class="form-group upload" title="Загрузите фотографии для вашего объявления">
+                                <div class="side-desc">
+                                    <label>
+                                        <i class="fa fa-picture-o"></i>
+                                        Загрузите фото
+                                        <span>&nbsp</span>
+                                    </label>
+                                </div>
+                                <hr>
+                                <div class="fileupload-buttonbar">
+                                    <div>
+                                        <!-- The fileinput-button span is used to style the file input field as button -->
+                                        <span class="btn btn-success fileinput-button">
+                                            <i class="fa fa-plus-circle"></i>
+                                            <span>Добавить фото</span>
+                                            <input type="file" name="files[]" multiple>
+                                        </span>
+                                        <button type="submit" class="btn btn-primary start">
+                                            <i class="fa fa-cloud-upload"></i>
+                                            <span>Загрузить все</span>
+                                        </button>
+                                        <button type="reset" class="btn btn-warning cancel">
+                                            <i class="fa fa-stop"></i>
+                                            <span>Отменить загрузку</span>
+                                        </button>
+                                        <button type="button" class="btn btn-danger delete">
+                                            <i class="fa fa-times"></i>
+                                            <span>Удалить</span>
+                                        </button>
+                                        <input type="checkbox" class="toggle">
+                                        <!-- The global file processing state -->
+                                        <span class="fileupload-process"></span>
+                                    </div>
+                                    <!-- The global progress state -->
+                                    <div class="col-lg-5 fileupload-progress fade">
+                                        <!-- The global progress bar -->
+                                        <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                        </div>
+                                        <!-- The extended global progress state -->
+                                        <div class="progress-extended">&nbsp;</div>
+                                    </div>
+                                </div>
+                                <!-- The table listing the files available for upload/download -->
+                                <table role="presentation" class="table table-striped">
+                                    <tbody class="files">
+                                    </tbody>
+                                </table>
                             </div>
                             <hr>
                             <div class="form-group">
@@ -264,55 +295,6 @@
                                     <span>
                                     </span>
                                 </div>
-                            </div>
-                            <div class="form-group upload" title="Загрузите фотографии для вашего объявления">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-picture-o"></i>
-                                        Загрузите фото
-                                        <span>&nbsp</span>
-                                    </label>
-                                </div>
-                                <hr>
-                                <div class="fileupload-buttonbar">
-                                    <div>
-                                        <!-- The fileinput-button span is used to style the file input field as button -->
-                                        <span class="btn btn-success fileinput-button">
-                                            <i class="fa fa-plus-circle"></i>
-                                            <span>Добавить фото</span>
-                                            <input type="file" name="files[]" multiple>
-                                        </span>
-                                        <button type="submit" class="btn btn-primary start">
-                                            <i class="fa fa-cloud-upload"></i>
-                                            <span>Загрузить все</span>
-                                        </button>
-                                        <button type="reset" class="btn btn-warning cancel">
-                                            <i class="fa fa-stop"></i>
-                                            <span>Отменить загрузку</span>
-                                        </button>
-                                        <button type="button" class="btn btn-danger delete">
-                                            <i class="fa fa-times"></i>
-                                            <span>Удалить</span>
-                                        </button>
-                                        <input type="checkbox" class="toggle">
-                                        <!-- The global file processing state -->
-                                        <span class="fileupload-process"></span>
-                                    </div>
-                                    <!-- The global progress state -->
-                                    <div class="col-lg-5 fileupload-progress fade">
-                                        <!-- The global progress bar -->
-                                        <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-success" style="width:0%;"></div>
-                                        </div>
-                                        <!-- The extended global progress state -->
-                                        <div class="progress-extended">&nbsp;</div>
-                                    </div>
-                                </div>
-                                <!-- The table listing the files available for upload/download -->
-                                <table role="presentation" class="table table-striped">
-                                    <tbody class="files">
-                                    </tbody>
-                                </table>
                             </div>
                              <div class="form-group text-right">
                                 <div class="side-desc">
@@ -556,9 +538,221 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4>Как пользоваться сайтом:</h4>
                     <div class="video">
-                        <iframe width="854" height="480" src="https://www.youtube.com/embed/CesSdyftWSg" frameborder="0" allowfullscreen></iframe>
+                        <!-- <iframe width="854" height="480" src="https://www.youtube.com/embed/CesSdyftWSg" frameborder="0" allowfullscreen></iframe> -->
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="categoryModal">
+        <button class="btn-close"></button>
+        <div class="modal-body">
+            <div class="category-holder clearfix">
+               <a href="#" datatarget="cat1" class="cat-btn">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+               <a href="#" datatarget="cat1">
+                    <div class="cat-holder">
+                       <div class="image-holder">
+                           <img src="img/content/case.png" alt="">
+                       </div>
+                       <div class="text-holder">
+                           <span>
+                               Специальные эффекты (дым, снег, СО2)
+                           </span>
+                       </div>
+                    </div>
+               </a>
+            </div>
+            <div class="multi-menu">
+                <ul>
+                    <li>
+                        <span>Cat1</span>
+                        <ul>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat2</span>
+                        <ul>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat3</span>
+                        <ul>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat4</span>
+                        <ul>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat5</span>
+                        <ul>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat6</span>
+                        <ul>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                            <li><a href=""><span>Categoru1</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat7</span>
+                        <ul>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat8</span>
+                        <ul>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat9</span>
+                        <ul>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Cat10</span>
+                        <ul>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -566,14 +760,10 @@
     <script src="js/vendor/jquery-ui.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.bxslider.min.js"></script>
+    <script src="js/vendor/jquery.multilevelpushmenu.min.js"></script>
+    <script src="js/vendor/basichtml.js"></script>
     <script src="js/product.js"></script>
-    <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-    <script>
-      $(function() {
-        $( "#speed" ).selectmenu();
-      });
-    </script>
     <script>
         $(function() {
         var tooltips = $( "[title]" ).tooltip({
@@ -665,7 +855,6 @@
     <!-- The Canvas to Blob plugin is included for image resizing functionality -->
     <script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
     <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- blueimp Gallery script -->
     <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="js/js-upload/jquery.iframe-transport.js"></script>
@@ -685,5 +874,18 @@
     <script src="js/js-upload/jquery.fileupload-ui.js"></script>
     <!-- The main application script -->
     <script src="js/js-upload/main.js"></script>
+    <script>
+    $('#categoryModalBtn').on('click', function() {
+        $('#categoryModal').toggleClass('open');
+        $('#modalBack').toggleClass('active');
+        $('body').toggleClass('modalOpen')
+    });
+
+    $('#categoryModal .btn-close').on('click', function(){
+        $('#categoryModal').removeClass('open');
+        $('#modalBack').removeClass('active')
+        $('body').removeClass('modalOpen')
+    });
+    </script>
 </body>
 </html>
