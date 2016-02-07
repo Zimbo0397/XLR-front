@@ -1390,12 +1390,19 @@ footer .logo-holder img {
 }
 
 #categoryModal {
+/*    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2*/
 }
-#categoryModal.open {
+#categoryModal .content.open {
     top: 10%;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
+    z-index: 10;
 }
 #categoryModal .content {
     position: absolute;
@@ -1438,4 +1445,43 @@ footer .logo-holder img {
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
+}
+
+.multi-menu {
+    position: relative;
+}
+.multi-menu .lv-1 {
+    list-style: none;
+    padding-left: 0;
+}
+.multi-menu .lv-1 > li {
+    background: #AAAACE;
+    height: 45px;
+    border: 1px solid #AAAACE;
+    width: 250px;
+}
+.multi-menu .lv-1 > li:hover {
+    background: #BBBBE6;
+}
+.multi-menu .lv-2 {
+    position: absolute;
+    left: 250px;
+    top:0;
+    z-index: -1;
+    width: 0;
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+.multi-menu .lv-1 > li.active .lv-2 {
+    z-index: 5;
+    height: 100%;
+    width: auto;
+    display: block;
+    background: #7878BB;
+}
+.multi-menu .lv-2 li {
+    width: 250px;
+    height: 45px;
+    background: #7878BB;
 }
