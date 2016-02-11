@@ -20,30 +20,19 @@
     <link rel="stylesheet" href="css/media.css"/>
 </head>
 <body>
-    <div id="modalBack"></div>
+
+        <div id="modalBack"></div>
+
     <header>
+        <div class="bg-wraper"></div>
         <div class="container">
             <div class="row">
-                <div class="first-line">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="first-line text-right">
+                    <div class="col-md-12">
                         <ul class="toggle-lang">
                             <li class="active"><a href="#" class="active">Рус</a></li>
                             <li class="active">/</li>
                             <li><a href="#">Укр</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                        <p class="work-phone pull-right"><a href="tel:+3805045634">+38 05045634</a></p>
-                        <ul class="social-header pull-right">
-                            <li><a href="#" class="social-ico"><i class="fa fa-phone"></i></a></li>
-                        </ul>
-                        <p class="work-phone pull-right"><a href="tel:+3805045634">showplus.in.ua </a></p>
-                        <ul class="social-header pull-right">
-                            <li><a href="#" class="social-ico"><i class="fa fa-skype"></i></a></li>
-                        </ul>
-                        <p class="work-phone pull-right"><a href="tel:+3805045634">vk.com/penashowplus</a></p>
-                        <ul class="social-header pull-right">
-                            <li><a href="#" class="social-ico"><i class="fa fa-vk"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +40,7 @@
             <div class="row">
                 <div class="wrap-header-block">
                     <!--<div class="wrap-left-block">-->
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-5 col-md-5 col-sm-5">
                             <div class="wrap-header-block">
                             <!--<div class="wrap-left-block">-->
                                 <h1 class="wrap-logo">
@@ -66,7 +55,7 @@
                         </div>
                     <!--</div>-->
                     <!--<div class="wrap-right-block">-->
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-lg-7 col-md-7 col-sm-7">
                             <div class="wrap-header-block">
                                 <h5>доска обьявлениий б/у музыкальных инструментов</h5>
                             <!--<div class="wrap-right-block">-->
@@ -121,213 +110,241 @@
             </div>
         </div>
     </header>
-    
+        
 
-
-    <section class="add-product">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="add-holder">
-                        <h1>
-                            Подать бесплатное объявление на XLR
-                        </h1>
-                        <hr>
-                        <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        Заголовок
-                                        <span class="important">*</span>
-                                    </label>
-                                </div>
-                                <input type="text" title="Напишите заголовок для Объявления">
-                                <div class="bott-desc">
-                                    <span>
-                                        максимально 200 знаков
-                                    </span>
-                                </div>
-                            </div>
-                             <div class="form-group">
-                                <div class="side-desc">
-                                    <label for="speed">
-                                        Выбрать рубрику
-                                        <span class="important">*</span>
-                                    </label>
-                                </div>
-                                <a href="#" data-toggle="modal" id="categoryModalBtn">
-                                    <div class="fixbord">
-                                        
-                                    </div>
-                                </a>
-                            </div>
+        <section class="add-product">
+            <div class="bg-wraper"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="add-holder">
+                            <h1>
+                                Подать бесплатное объявление на XLR
+                            </h1>
                             <hr>
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        Описание товара
-                                        <span class="important">*</span>
-                                    </label>
+                            <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            Заголовок
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <input type="text" title="Напишите заголовок для Объявления">
+                                    <div class="bott-desc">
+                                        <span>
+                                            максимально 200 знаков
+                                        </span>
+                                    </div>
                                 </div>
-                                <textarea title="Заполните описание товара"></textarea>
-                                <div class="bott-desc">
-                                    <span>
-                                        максимально 2000 знаков
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="form-group upload" title="Загрузите фотографии для вашего объявления">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-picture-o"></i>
-                                        Загрузите фото
-                                        <span>&nbsp</span>
-                                    </label>
+                                 <div class="form-group">
+                                    <div class="side-desc">
+                                        <label for="speed">
+                                            Выбрать рубрику
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <a href="#" data-toggle="modal" id="categoryModalBtn">
+                                        <div class="fixbord">
+                                            <i class="fa fa-angle-down"></i>
+                                        </div>
+                                    </a>
+                                    <div id="cat-bredcrumbs">
+                                        <ul class="list-inline">
+                                            <li class="br-lv-1">
+                                                
+                                            </li>
+                                            <li class="br-lv-2">
+                                                
+                                            </li>
+                                        </ul>
+                                        <div id="br-edit" class="btn">
+                                            <i class="fa fa-refresh"></i>
+                                            Изменить
+                                        </div>
+                                    </div>
                                 </div>
                                 <hr>
-                                <div class="fileupload-buttonbar">
-                                    <div>
-                                        <!-- The fileinput-button span is used to style the file input field as button -->
-                                        <span class="btn btn-success fileinput-button">
-                                            <i class="fa fa-plus-circle"></i>
-                                            <span>Добавить фото</span>
-                                            <input type="file" name="files[]" multiple>
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            Описание товара
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <textarea title="Заполните описание товара"></textarea>
+                                    <div class="bott-desc">
+                                        <span>
+                                            максимально 2000 знаков
                                         </span>
-                                        <button type="submit" class="btn btn-primary start">
-                                            <i class="fa fa-cloud-upload"></i>
-                                            <span>Загрузить все</span>
-                                        </button>
-                                        <button type="reset" class="btn btn-warning cancel">
-                                            <i class="fa fa-stop"></i>
-                                            <span>Отменить загрузку</span>
-                                        </button>
-                                        <button type="button" class="btn btn-danger delete">
-                                            <i class="fa fa-times"></i>
-                                            <span>Удалить</span>
-                                        </button>
-                                        <input type="checkbox" class="toggle">
-                                        <!-- The global file processing state -->
-                                        <span class="fileupload-process"></span>
                                     </div>
-                                    <!-- The global progress state -->
-                                    <div class="col-lg-5 fileupload-progress fade">
-                                        <!-- The global progress bar -->
-                                        <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                                            <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                </div>
+                                <div class="form-group video">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-youtube-play"></i>
+                                            Загрузите видео 
+                                        </label>
+                                    </div>
+                                    <textarea title="вставьте ссылку на видео"></textarea>
+                                    <div class="bott-desc">
+                                        <span>
+                                            вставьте ссылку с видеохостинга например c - YouTube
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group upload" title="Загрузите фотографии для вашего объявления">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-picture-o"></i>
+                                            Загрузите фото
+                                            <span>&nbsp</span>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="fileupload-buttonbar">
+                                        <div>
+                                            <!-- The fileinput-button span is used to style the file input field as button -->
+                                            <span class="btn btn-success fileinput-button">
+                                                <i class="fa fa-plus-circle"></i>
+                                                <span>Добавить фото</span>
+                                                <input type="file" name="files[]" multiple>
+                                            </span>
+                                            <button type="submit" class="btn btn-primary start">
+                                                <i class="fa fa-cloud-upload"></i>
+                                                <span>Загрузить все</span>
+                                            </button>
+                                            <button type="reset" class="btn btn-warning cancel">
+                                                <i class="fa fa-stop"></i>
+                                                <span>Отменить загрузку</span>
+                                            </button>
+                                            <button type="button" class="btn btn-danger delete">
+                                                <i class="fa fa-times"></i>
+                                                <span>Удалить</span>
+                                            </button>
+                                            <input type="checkbox" class="toggle">
+                                            <!-- The global file processing state -->
+                                            <span class="fileupload-process"></span>
                                         </div>
-                                        <!-- The extended global progress state -->
-                                        <div class="progress-extended">&nbsp;</div>
+                                        <!-- The global progress state -->
+                                        <div class="col-lg-5 fileupload-progress fade">
+                                            <!-- The global progress bar -->
+                                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                            </div>
+                                            <!-- The extended global progress state -->
+                                            <div class="progress-extended">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <!-- The table listing the files available for upload/download -->
+                                    <table role="presentation" class="table table-striped">
+                                        <tbody class="files">
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-map-marker"></i>
+                                            Месторасположение
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <input type="text" title="Ваш адрес!">
+                                    <div class="bott-desc">
+                                        <span>
+                                        </span>
                                     </div>
                                 </div>
-                                <!-- The table listing the files available for upload/download -->
-                                <table role="presentation" class="table table-striped">
-                                    <tbody class="files">
-                                    </tbody>
-                                </table>
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-user"></i>
+                                            Контактное лицо
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <input type="text" title="Как к вам обащаться?">
+                                    <div class="bott-desc">
+                                        <span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-envelope"></i>
+                                            Email-aдрес
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <input type="text" title="Ваша електронная почта!">
+                                    <div class="bott-desc">
+                                        <span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-mobile"></i>
+                                            Телефон
+                                            <span class="important">*</span>
+                                        </label>
+                                    </div>
+                                    <input type="text" title="Номер вашего телефона">
+                                    <div class="bott-desc">
+                                        <span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="side-desc">
+                                        <label>
+                                            <i class="fa fa-skype"></i>
+                                            Skype
+                                            <span>&nbsp</span>
+                                        </label>
+                                    </div>
+                                    <input type="text">
+                                    <div class="bott-desc">
+                                        <span>
+                                        </span>
+                                    </div>
+                                </div>
+                                 <div class="form-group text-right">
+                                    <div class="side-desc">
+                                    </div>
+                                    <div class="public-btn">
+                                        <input type="checkbox">
+                                        <label>
+                                            я согдасен(на) с <a href="">правилаим</a> сервиса
+                                        </label>
+                                        <button>
+                                            Разместить
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                    <a class="prev">‹</вa>
+                                    <a class="next">›</a>
+                                    <a class="close">×</a>
+                                    <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
                             </div>
-                            <hr>
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-map-marker"></i>
-                                        Адрес
-                                        <span class="important">*</span>
-                                    </label>
-                                </div>
-                                <input type="text" title="Ваш адрес!">
-                                <div class="bott-desc">
-                                    <span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-user"></i>
-                                        Контактное лицо
-                                        <span class="important">*</span>
-                                    </label>
-                                </div>
-                                <input type="text" title="Как к вам обащаться?">
-                                <div class="bott-desc">
-                                    <span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-envelope"></i>
-                                        Email-aдрес
-                                        <span class="important">*</span>
-                                    </label>
-                                </div>
-                                <input type="text" title="Ваша електронная почта!">
-                                <div class="bott-desc">
-                                    <span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-mobile"></i>
-                                        Телефон
-                                        <span class="important">*</span>
-                                    </label>
-                                </div>
-                                <input type="text" title="Номер вашего телефона">
-                                <div class="bott-desc">
-                                    <span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="side-desc">
-                                    <label>
-                                        <i class="fa fa-skype"></i>
-                                        Skype
-                                        <span>&nbsp</span>
-                                    </label>
-                                </div>
-                                <input type="text">
-                                <div class="bott-desc">
-                                    <span>
-                                    </span>
-                                </div>
-                            </div>
-                             <div class="form-group text-right">
-                                <div class="side-desc">
-                                </div>
-                                <div class="public-btn">
-                                    <input type="checkbox">
-                                    <label>
-                                        я согдасен(на) с <a href="">правилаим</a> сервиса
-                                    </label>
-                                    <button>
-                                        Разместить
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
-                            <div class="slides"></div>
-                            <h3 class="title"></h3>
-                                <a class="prev">‹</a>
-                                <a class="next">›</a>
-                                <a class="close">×</a>
-                                <a class="play-pause"></a>
-                            <ol class="indicator"></ol>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
 
 
     <footer>
+        <div class="bg-wraper"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -460,6 +477,22 @@
                     </div>
                 </div>
             </div>
+            <div class="row first-line">
+                <div class="col-md-12">
+                    <p class="work-phone pull-right"><a href="tel:+3805045634">+38 05045634</a></p>
+                    <ul class="social-header pull-right">
+                        <li><a href="#" class="social-ico"><i class="fa fa-phone"></i></a></li>
+                    </ul>
+                    <p class="work-phone pull-right"><a href="tel:+3805045634">showplus.in.ua </a></p>
+                    <ul class="social-header pull-right">
+                        <li><a href="#" class="social-ico"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                    <p class="work-phone pull-right"><a href="tel:+3805045634">vk.com/penashowplus</a></p>
+                    <ul class="social-header pull-right">
+                        <li><a href="#" class="social-ico"><i class="fa fa-vk"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="share-holder">
             <hr>    
@@ -492,6 +525,7 @@
             </div>
         </div>
     </footer>
+        
 
 
     <!-- =============  Modal window right   ============== -->
@@ -547,13 +581,52 @@
     <!-- Modal -->
     <div id="categoryModal">
         <div class="content">
-            <button class="btn-close"></button>
+            <button class="btn-close"><i class="fa fa-times"></i></button>
             <div class="modal-body">
-                <!-- <div class="category-holder clearfix">
-                   <a href="#" datatarget="cat1" class="cat-btn" class="cat-btn">
+                <div class="category-holder clearfix">
+                    <h1>
+                        Выберите рубрику
+                    </h1>
+                   <a href="#cat1" class="cat-btn" class="cat-btn">
                         <div class="cat-holder">
                            <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
+                               <img src="img/content/img6.png" alt="">
+                           </div>
+                           <div class="text-holder">
+                               <span>
+                                   Световое оборудование
+                               </span>
+                           </div>
+                        </div>
+                   </a>
+                   <a href="#cat2" class="cat-btn">
+                        <div class="cat-holder">
+                           <div class="image-holder">
+                               <img src="img/content/img2.png" alt="">
+                           </div>
+                           <div class="text-holder">
+                               <span>
+                                   Звуковое оборудование
+                               </span>
+                           </div>
+                        </div>
+                   </a>
+                   <a href="#cat3" class="cat-btn">
+                        <div class="cat-holder">
+                           <div class="image-holder">
+                               <img src="img/content/img4.png" alt="">
+                           </div>
+                           <div class="text-holder">
+                               <span>
+                                   Мультимедийное оборудование
+                               </span>
+                           </div>
+                        </div>
+                   </a>
+                   <a href="#cat4" class="cat-btn">
+                        <div class="cat-holder">
+                           <div class="image-holder">
+                               <img src="img/content/specefekti.png" alt="">
                            </div>
                            <div class="text-holder">
                                <span>
@@ -562,345 +635,365 @@
                            </div>
                         </div>
                    </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
+                   <a href="#cat5" class="cat-btn">
+                        <div class="cat-holder">
+                           <div class="image-holder">
+                               <img src="img/content/dj.png" alt="">
+                           </div>
+                           <div class="text-holder">
+                               <span>
+                                   DJ оборудование
+                               </span>
+                           </div>
+                        </div>
+                   </a>
+                   <a href="#cat6" class="cat-btn">
+                        <div class="cat-holder">
+                           <div class="image-holder">
+                               <img src="img/content/img7.png" alt="">
+                           </div>
+                           <div class="text-holder">
+                               <span>
+                                   Электрообордование
+                               </span>
+                           </div>
+                        </div>
+                   </a>
+                   <a href="#cat7" class="cat-btn">
+                        <div class="cat-holder">
+                           <div class="image-holder">
+                               <img src="img/content/music.png" alt="">
+                           </div>
+                           <div class="text-holder">
+                               <span>
+                                   Музыкальные инструменты
+                               </span>
+                           </div>
+                        </div>
+                   </a>
+                   <a href="#cat8" class="cat-btn">
                         <div class="cat-holder">
                            <div class="image-holder">
                                <img src="img/content/case.png" alt="">
                            </div>
                            <div class="text-holder">
                                <span>
-                                   Специальные эффекты (дым, снег, СО2)
+                                   Кейсы
                                </span>
                            </div>
                         </div>
                    </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
+                   <a href="#cat9" class="cat-btn">
                         <div class="cat-holder">
                            <div class="image-holder">
                                <img src="img/content/case.png" alt="">
                            </div>
                            <div class="text-holder">
                                <span>
-                                   Специальные эффекты (дым, снег, СО2)
+                                   Коммутационное оборудование
                                </span>
                            </div>
                         </div>
                    </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
+                   <a href="#cat10" class="cat-btn">
                         <div class="cat-holder">
                            <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
+                               <img src="img/content/scena.png" alt="">
                            </div>
                            <div class="text-holder">
                                <span>
-                                   Специальные эффекты (дым, снег, СО2)
+                                   Сцены (Сцены, Подиумы,Фермы)
                                </span>
                            </div>
                         </div>
                    </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
-                        <div class="cat-holder">
-                           <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
-                           </div>
-                           <div class="text-holder">
-                               <span>
-                                   Специальные эффекты (дым, снег, СО2)
-                               </span>
-                           </div>
-                        </div>
-                   </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
-                        <div class="cat-holder">
-                           <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
-                           </div>
-                           <div class="text-holder">
-                               <span>
-                                   Специальные эффекты (дым, снег, СО2)
-                               </span>
-                           </div>
-                        </div>
-                   </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
-                        <div class="cat-holder">
-                           <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
-                           </div>
-                           <div class="text-holder">
-                               <span>
-                                   Специальные эффекты (дым, снег, СО2)
-                               </span>
-                           </div>
-                        </div>
-                   </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
-                        <div class="cat-holder">
-                           <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
-                           </div>
-                           <div class="text-holder">
-                               <span>
-                                   Специальные эффекты (дым, снег, СО2)
-                               </span>
-                           </div>
-                        </div>
-                   </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
-                        <div class="cat-holder">
-                           <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
-                           </div>
-                           <div class="text-holder">
-                               <span>
-                                   Специальные эффекты (дым, снег, СО2)
-                               </span>
-                           </div>
-                        </div>
-                   </a>
-                   <a href="#" datatarget="cat1" class="cat-btn">
-                        <div class="cat-holder">
-                           <div class="image-holder">
-                               <img src="img/content/case.png" alt="">
-                           </div>
-                           <div class="text-holder">
-                               <span>
-                                   Специальные эффекты (дым, снег, СО2)
-                               </span>
-                           </div>
-                        </div>
-                   </a>
-                </div> -->
-                <div class="multi-menu">
+                </div>
+                <div id="ml-mn" class="multi-menu closed">
                     <ul class="lv-1">
-                        <li class="active"> 
+                        <li id='cat1'> 
                             <div class="cat-holder-lv-1">
-                                <span>Cat1</span>
+                                <span>Световое оборудование</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrtrgoru1</span>
+                                        <span>Категоря 13</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrtrgoru341</span>
+                                        <span>Категоря 24</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrt4rgoru1</span>
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cat-holder-lv-2">
+                                        <span>Категоря 33</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat2'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat2</span>
+                                <span>Звуковое оборудование</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr6rtrgoru1</span>
+                                        <span>Категоря 13</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr7trgoru1</span>
+                                        <span>Категоря 24</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr8rtrgoru1</span>
+                                        <span>Категоря 33</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat3'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat3</span>
+                                <span>Мультимедийное оборудование</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr9rtrgoru1</span>
+                                        <span>Категоря 12</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr7rtrgoru1</span>
+                                        <span>Категоря 232</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr6rtrgoru1</span>
+                                        <span>Категоря 43</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li><div class="cat-holder-lv-1">
-                                <span>Cat4</span>
+                        <li id='cat4'>
+                            <div class="cat-holder-lv-1">
+                                <span>пециальные эффекты (дым, снег, СО2)</span>
                             </div> 
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr6rtrgoru1</span>
+                                        <span>Категоря 14</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr5rtrgoru1</span>
+                                        <span>Категоря 28</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr7rtrgoru1</span>
+                                        <span>Категоря 34</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat5'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat5</span>
+                                <span>DJ оборудование</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr9rtrgoru1</span>
+                                        <span>Категоря 13</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr6trgoru1</span>
+                                        <span>Категоря 26</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrtrgoru1</span>
+                                        <span>Категоря 33</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat6'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat6</span>
+                                <span>Электрообордование</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrt5rgoru1</span>
+                                        <span>Категоря 12</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr9rtrgoru1</span>
+                                        <span>Категоря 23</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrt0rgoru1</span>
+                                        <span>Категоря 32</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat7'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat7</span>
+                                <span>Музыкальные инструменты</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr6trgoru1</span>
+                                        <span>Категоря 13</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrt4rgoru1</span>
+                                        <span>Категоря 24</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr3trgoru1</span>
+                                        <span>Категоря 33</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat8'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat8</span>
+                                <span>Коммутационное оборудование</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrt87rgoru1</span>
+                                        <span>Категоря 14</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr423trgoru1</span>
+                                        <span>Категоря 25</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrrt546rgoru1</span>
+                                        <span>Категоря 34</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat9'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat9</span>
+                                <span>Сцены (Сцены, Подиумы,Фермы)</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr36trgoru1</span>
+                                        <span>Категоря 15</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr264rtrgoru1</span>
+                                        <span>Категоря 24</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr467trgoru1</span>
+                                        <span>Категоря 35</span>
                                     </div>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id='cat10'>
                             <div class="cat-holder-lv-1">
-                                <span>Cat10</span>
+                                <span>Кейсы</span>
                             </div>
                             <ul class="lv-2">
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr356trgoru1</span>
+                                        <span>Категоря 1</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetr4367rtrgoru1</span>
+                                        <span>Категоря 6</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="cat-holder-lv-2">
-                                        <span>Catetrr453trgoru1</span>
+                                        <span>Категоря 8</span>
                                     </div>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="cat-bredcrumbs">
-                    <ul>
-                        <li class="br-lv-1">
-                            
-                        </li>
-                        <li class="br-lv-2">
-                            
                         </li>
                     </ul>
                 </div>
@@ -1025,28 +1118,70 @@
     <script src="js/js-upload/jquery.fileupload-ui.js"></script>
     <!-- The main application script -->
     <script src="js/js-upload/main.js"></script>
+    
     <script>
-    $('#categoryModalBtn').on('click', function() {
-        $('#categoryModal .content').toggleClass('open');
-        $('#modalBack').toggleClass('active');
-        $('body').toggleClass('modalOpen')
-    });
-
     $('#categoryModal .btn-close').on('click', function(){
         $('#categoryModal .content').removeClass('open');
         $('#modalBack').removeClass('active')
         $('body').removeClass('modalOpen')
+        $('#categoryModal').removeClass('open');
+        $('#ml-mn').addClass('closed')
+        $('#categoryModal').find('li').removeClass('active');
     });
-    $('#categoryModal .lv-1 li ').on('click', function() {
-        // event.stopPropagation();
-       $('#categoryModal .lv-1 li').removeClass('active');
-       $(this).addClass('active');
-       $('#cat-bredcrumbs ul li.br-lv-1 span').remove();
-       $(this).find('.cat-holder-lv-1 span').clone().prependTo('#cat-bredcrumbs ul li.br-lv-1')
+
+    $('#categoryModalBtn').on('click', function() {
+        $('#categoryModal .content').toggleClass('open');
+        $('#categoryModal').toggleClass('open');
+        $('#modalBack').toggleClass('active');
+        $('body').toggleClass('modalOpen')
     });
-    $('#categoryModal .lv-1 li .lv-2 li ').on('click', function () {
-       $('#cat-bredcrumbs ul li.br-lv-2 span').remove();
-       $(this).find('.cat-holder-lv-2 span').clone().prependTo('#cat-bredcrumbs ul li.br-lv-2')
+    $('#br-edit').on('click', function() {
+        $('#categoryModal .content').toggleClass('open');
+        $('#categoryModal').toggleClass('open');
+        $('#modalBack').toggleClass('active');
+        $('body').toggleClass('modalOpen')
+        // $('#ml-mn').toggleClass('closed')
+        $('#categoryModal').find('li').removeClass('active')
+    });
+    $('#categoryModal').find('li').on('click', function(e) {
+        var $self = $(this),
+            targ = e.target;
+
+
+        if ($self.parent().hasClass('lv-1')) {
+            $self
+                .siblings()
+                .removeClass('active')
+                .end()
+                .addClass('active');
+           $('#cat-bredcrumbs ul li.br-lv-1')
+                .text( $self.clone().find('ul').remove().end().text() );
+            if (targ == this) {
+               $('#cat-bredcrumbs ul li.br-lv-2')
+                    .text(' ');
+            }
+        }
+        if ($self.parent().hasClass('lv-2')) {
+           $('#cat-bredcrumbs ul li.br-lv-2')
+                .text( $self.text() );  
+
+            $('#categoryModal .content').removeClass('open')
+            $('#cat-bredcrumbs').addClass('active')
+            $('#modalBack').removeClass('active')
+            $('body').removeClass('modalOpen')
+            $('#categoryModal').removeClass('open')
+            $('#br-edit').addClass('active')
+            $('.fixbord').addClass('hidden')
+            $('#categoryModal').find('li').removeClass('active')
+            $('#ml-mn').addClass('closed')
+        }
+    });
+    $('#categoryModal').find('.cat-btn').on('click', function(e) {
+        e.preventDefault();
+        // console.log($(this).attr('href'));
+        $( $(this).attr('href') || $(this).data('target') ).addClass('active');
+        console.log($( $(this).attr('href') || $(this).data('target') ))
+        $('#ml-mn').removeClass('closed')
     });
     </script>
 </body>
